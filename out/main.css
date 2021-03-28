@@ -242,7 +242,7 @@ nav ul li a:hover {
 }
 
 .pizza-2-img {
-  background-image: url("/Img/pizza3.png");
+  background-image: url("./Img/pizza3.png");
 }
 
 .partners-container {
