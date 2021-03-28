@@ -73,7 +73,7 @@ nav ul li a:hover {
 }
 
 .header-img {
-  background-image: url("Img/Pizza1.jpeg");
+  background-image: url("/Img/Pizza1.jpeg");
 }
 
 .header-img header {
@@ -212,8 +212,8 @@ nav ul li a:hover {
 }
 
 .menu-container #prices li {
-  padding: 1.6rem;
   color: #222222;
+  margin: 2.8rem;
 }
 
 @media (min-width: 500px) {
