@@ -223,7 +223,7 @@ nav ul li a:hover {
 }
 
 .pizza-img {
-  background-image: url("Img/Tomato-basil-sauce.jpg");
+  background-image: url("/Img/Tomato-basil-sauce.jpg");
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -242,7 +242,7 @@ nav ul li a:hover {
 }
 
 .pizza-2-img {
-  background-image: url("Img/pizza3.png");
+  background-image: url("/Img/pizza3.png");
 }
 
 .partners-container {
@@ -278,7 +278,7 @@ nav ul li a:hover {
 }
 
 .oven-img {
-  background-image: url("Img/oven1.jpg");
+  background-image: url("/Img/oven1.jpg");
 }
 
 footer {
