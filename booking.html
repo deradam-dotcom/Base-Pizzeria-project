@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="booking.css">
+    <title>Booking Page</title>
+</head>
+
+<body>
+    <nav>
+        <div class="text"> Colosseo</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+    <section class="banner">
+            <div class="card-content">
+                <h3>BOOK YOUR TABLE</h3>
+                <form id="form">
+                    <div class="form-row">
+                        <input type="text"   id="username" placeholder="Full name" autocomplete="off" required>
+                        <input type="number" id="number" placeholder="How many People?" min="1" required>
+                    </div>
+                    <div class="form-row" id="input-box"> 
+                        <input type="datetime-local" name="date">
+                        <input type="email" placeholder="Email" id="email"  onkeydown="validation()" autocomplete="off" required>
+                        <span id="text"></span>
+                    </div>
+                    <div class="btn-book">
+                        <input type="submit" id="submit" value="Book Table">
+                    </div>
+                </form>
+            </div>
+    </section>
+    <script src="booking.js"></script>
+</body>
+
+</html>

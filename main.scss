@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&display=swap");
+
+$primary-font-color: #222222;
+$primary-nav-color: #000000;
+$primary-bg-color: #fdfdfd;
+$secondary-font-color: #444444;
+$normal-font-size: 1.5rem;
+$text-font2: "Merriweather", sans-serif;
+$text-font3: "Dancing Script", sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $text-font2;
+  color: $primary-font-color;
+  background-color: $primary-bg-color;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: black;
+  width: 100%;
+  box-shadow: 0 3px 3px rgba($primary-font-color, $alpha: 0.5);
+
+  .text {
+    cursor: pointer;
+    font-family: $text-font3;
+    color: #ffffff;
+    font-size: 2rem;
+    padding: 0 2rem;
+    border-right: 1px solid #ffffff;
+
+    img {
+      display: block;
+    }
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+
+    li a {
+      display: block;
+      text-decoration: none;
+      color: $primary-bg-color;
+      padding: 1rem 1.5rem;
+      font-family: $text-font2;
+      font-size: 1rem;
+      transition: all 0.4s ease-in-out;
+
+      &:hover {
+        color: #ccad34;
+      }
+    }
+  }
+}
+
+.parallax {
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.header-img {
+  background-image: url("/Img/Pizza1.jpeg");
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    background-color: $primary-nav-color;
+    opacity: 0.6;
+    color: white;
+
+    h1 {
+      position: relative;
+      bottom: 7%;
+      font-family: $text-font3;
+      font-size: 5rem;
+      margin-bottom: 80px;
+    }
+
+    p {
+      text-align: center;
+      font-size: 1.5rem;
+      margin-bottom: 5rem;
+      .header-span {
+        font-family: $text-font3;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+.company {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 3rem;
+  background-color: $primary-bg-color;
+
+  h4 {
+    font-size: 1.5rem;
+    font-family: $text-font3;
+    color: $primary-font-color;
+    padding: 1rem 0 3rem 0;
+  }
+  h2 {
+    font-family: $text-font2;
+    font-size: 2rem;
+    padding: 1rem 0 1rem 0;
+  }
+  p {
+    margin: 1.5rem auto;
+    text-align: center;
+    line-height: 2rem;
+    font-family: $text-font2;
+  }
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    font-family: $text-font3;
+    font-size: 2rem;
+    margin: 2.5rem;
+    text-align: center;
+  }
+  h4 {
+    font-size: 1.3rem;
+    font-family: $text-font2;
+    margin: 2rem 0 0 2rem;
+    mark {
+      background-color: $primary-nav-color;
+      color: $primary-bg-color;
+    }
+  }
+  .products {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #products {
+    list-style: none;
+    padding: 0 0 0 1rem;
+    li {
+      padding: 1rem;
+      font-family: $text-font2;
+      span {
+        font-size: 0.8rem;
+        color: $secondary-font-color;
+      }
+    }
+  }
+  #prices {
+    list-style-type: none;
+
+    li {
+      padding: 1.6rem;
+      color: $primary-font-color;
+      @media (min-width: 500px) {
+        padding: 0.1rem;
+      }
+    }
+  }
+}
+
+.pizza-img {
+  background-image: url("/Img/Tomato-basil-sauce.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h4 {
+    font-family: $text-font3;
+    font-size: 2.5rem;
+    color: rgb(223, 223, 223);
+  }
+}
+
+.pizza-2-img {
+  background-image: url("/Img/pizza3.png");
+}
+
+.partners-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0 3rem 0;
+
+  h3 {
+    font-family: $text-font3;
+    font-size: 2rem;
+    margin: 2rem;
+  }
+  @media (max-width: 350px) {
+    flex-direction: column;
+  }
+}
+
+.oven-img {
+  background-image: url("/Img/oven1.jpg");
+}
+
+footer {
+  background: $primary-bg-color;
+  display: flex;
+  justify-content: space-around;
+  padding: 1.5rem;
+  background-color: $primary-nav-color;
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    li {
+      color: $primary-bg-color;
+      h5 {
+        text-decoration: underline;
+        padding: 0.5rem 0 1rem 0;
+      }
+    }
+  }
+}
+#social-logo {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  li {
+    padding: 1rem 2rem;
+
+    a {
+      color: $primary-bg-color;
+      text-decoration: none;
+
+      .fab {
+        transition: all 0.4s ease-in-out;
+        font-size: 2rem;
+        &:hover {
+          color: #ccad34;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: black;
+  width: 100%;
+}
+
+nav .text {
+  cursor: pointer;
+  font-family: "Dancing Script", serif;
+  color: #ffffff;
+  font-size: 2rem;
+  padding: 0 2rem;
+  border-right: 1px solid #ffffff;
+}
+li a {
+  display: block;
+  font-family: "Merriweather", serif;
+  text-decoration: none;
+  font-size: 1rem;
+  color: whitesmoke;
+  padding: 1rem 1.5rem;
+  transition: all 0.4s ease-in-out;
+}
+li a:hover {
+  color: #ccad34;
+}
+.banner {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*color: white;*/
+  background-image: url("Img/oven2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.banner h2 {
+  padding-bottom: 40px;
+  margin-bottom: 20px;
+}
+
+.card-content {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 360px;
+  max-width: 500px;
+}
+
+.card-content h3 {
+  text-align: center;
+  color: white;
+  padding: 25px 0 10px 0;
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.form-row {
+  display: flex;
+  width: 90%;
+  height: 100px;
+  margin: 0 auto;
+}
+form select,
+form input {
+  display: block;
+  width: 100%;
+  margin: 30px 8px;
+  padding: 8px;
+  font-size: 15px;
+  outline: none;
+  border: none;
+  font-weight: 300;
+  transition: all 0.2s ease-in;
+}
+
+form input[type="text"],
+form input[type="number"],
+input[type="datetime-local"],
+input[type="email"],
+form input::placeholder,
+select {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+form input[type="text"]:focus,
+form input[type="number"]:focus,
+input[type="datetime-local"]:focus {
+  border: 2px solid #2691d9;
+}
+
+form input::placeholder {
+  background-color: rgba(0, 0, 0, 0.00005);
+}
+
+/* Button */
+
+.btn-book {
+  text-align: center;
+}
+
+.btn-book input[type="submit"] {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 12px 0;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100px;
+  margin: 12px auto;
+}
+
+form input[type="submit"]:hover {
+  background-color: black;
+}
+
+/* Email valid icon and text*/
+
+#text {
+  position: absolute;
+  top: 70px;
+  left: 220px;
+  width: 200px;
+  height: 24px;
+  font-size: 14px;
+  color: #000;
+  font-weight: 300;
+  font-style: italic;
+}
+
+#form #input-box {
+  position: relative;
+}
+
+#form.invalid #input-box::before {
+  content: "";
+  position: absolute;
+  right: 12px;
+  top: 38px;
+  width: 24px;
+  height: 24px;
+  background-image: url("Img/invalid.png");
+  background-size: cover;
+  z-index: 10000;
+}
+
+#form.valid #input-box::before {
+  content: "";
+  position: absolute;
+  right: 12px;
+  top: 38px;
+  width: 24px;
+  height: 24px;
+  background-image: url("Img/valid.png");
+  background-size: cover;
+  z-index: 10000;
+}
+
+/*MediaQ*/
+
+@media only screen and (max-width: 992px) {
+  .card-container {
+    grid-template-columns: 100%;
+  }
+  .card-img {
+    height: 330px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+ 
+  #text {
+      display: none;
+  }
